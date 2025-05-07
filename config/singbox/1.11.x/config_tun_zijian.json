@@ -63,35 +63,42 @@
 
 
   "outbounds": [
-    { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["节点名字1", "节点名字2"] },
-    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["节点名字1", "节点名字2"] },
+    { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["w0hy2", "w8dk"] },
+    { "tag": "🤖 OpenAI", "type": "selector", "outbounds": ["w0hy2", "w8dk"] },
     { "tag": "🎯 全球直连", "type": "direct" },
-       {
-      "tag": "节点名字1",
+        {
+      "tag": "w0hy2",
       "type": "hysteria2",
-      "server": "154.204.183.217",
-      "server_port": 60449,
-      "password": "c33a010e-b029-4bad-889d-17a5103949a8",
+      "server": "65.108.103.151",
+      "server_port": 21084,
+      "password": "9e0da28d-ee9c-4fef-95a4-df2d03350402",
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
         "insecure": true
       }
     },
-    {
-      "tag": "节点名字2",
+      {
+      "tag": "w8dk",
       "type": "vmess",
-      "server": "154.204.183.217",
-      "server_port": 8880,
-      "uuid": "c33a010e-b029-4bad-889d-17a5103949a8",
-      "security": "auto",
+      "server": "icook.hk",
+      "server_port": 8443,
+      "uuid": "2139b543-2be1-441e-83e8-c4a77c0c6e14",
+      "security": "none",
       "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "w8daki.qxbkjw.cloudns.biz",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
         "headers": {
-          "Host": "www.bing.com"
+          "Host": "w8daki.qxbkjw.cloudns.biz"
         },
-        "path": "/c33a010e-b029-4bad-889d-17a5103949a8-vm"
+        "path": "/vms-2139b543-2be1-441e-83e8-c4a77c0c6e14",
+        "early_data_header_name": "Sec-WebSocket-Protocol",
+        "max_early_data": 2048
       }
     }
   ],
